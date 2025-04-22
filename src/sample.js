@@ -10,7 +10,15 @@ const isDivisibleBy5 = (num1) => {
     }
 }
 
+const sum = (a, b) => {
+    if (typeof a !== "number" || typeof b !== "number") {
+        return null;
+    }
+    return a + b;
+};
+
 module.exports = {
     addFunc,
-    isDivisibleBy5
+    isDivisibleBy5,
+    sum,
 }
